@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <meta name="author" lang="fr" content="Solange Harmonie PICARD">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Portfolio : Solange Harmonie PICARD</title>
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/treeView.css">
     <link rel="stylesheet" href="css/tabs.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
   </head>
 
   <body>
 
     <!-- The sidebar -->
     <div class="sidebar">
-      <div class="sidebar-title">Home</div>
+      <div class="sidebar-title">/home</div>
       <ul id="folders">
         <li><a href="#contact" class="caret"><i class="fas fa-folder"></i> /projects</a>
           <ul class="nested">
@@ -42,10 +43,21 @@
 
     <!-- Tabs -->
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London <span onclick="this.parentElement.style.display='none'" class="topright">&times</span></button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris <span onclick="this.parentElement.style.display='none'" class="topright">&times</span></button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo <span onclick="this.parentElement.style.display='none'" class="topright">&times</span></button>
+
+      <button class="tablinks" onclick="openFolder(event, 'London');" id="defaultOpen">London
+        <span id="closeLondon" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      </button>
+
+      <button class="tablinks" onclick="openFolder(event, 'Paris');">Paris
+        <span id="closeParis" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      </button>
+
+      <button class="tablinks" onclick="openFolder(event, 'Tokyo');">Tokyo
+        <span id="closeTokyo" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      </button>
+
       <button class="border-bottom"></button>
+
     </div>
 
     <div id="London" class="tabcontent">
@@ -62,7 +74,6 @@
       <h3>Tokyo</h3>
       <p>Tokyo is the capital of Japan.</p>
     </div>
-
 
     <!-- Fontawesome -->
     <script type="text/javascript" src="https://kit.fontawesome.com/6fee70888d.js"></script>

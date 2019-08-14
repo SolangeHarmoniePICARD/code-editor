@@ -1,6 +1,7 @@
 html, body{
   margin:0;
   padding:0;
+  height: 100%;
 }
 
 /* Style the tab */
@@ -30,7 +31,7 @@ html, body{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #282C34;;
+  background-color: #282C34;
 }
 
 /* Create an active/current tablink class */
@@ -58,6 +59,8 @@ html, body{
   border-top: none;
   margin-left:16em;
   color:#9EA6B1;
+  background-color: #282C34;
+  height: 100%;
 }
 
 /* Style the close button */
