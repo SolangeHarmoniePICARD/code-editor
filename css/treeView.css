@@ -1,8 +1,8 @@
-ul, #folders {
+ul, #tree {
   list-style-type: none;
 }
 
-#folders {
+#tree {
   margin: 0;
   margin-left: 16px;
   padding: 0;
@@ -24,7 +24,7 @@ ul, #folders {
   margin-left: -1.1em;
 }
 
-.caret-down::before {
+.folders-down::before {
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Safari */'
   transform: rotate(90deg);

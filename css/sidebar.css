@@ -19,10 +19,15 @@ body{
   border-right: 1px solid black;
 }
 
-.sidebar-title{
+#sidebar-title{
   text-align: center;
   color: #D7DAE0;
   margin-bottom: 8px;
+  font-size: 1.6em;
+}
+
+#sidebar-title a {
+  font-size: 1em;
 }
 
 /* Style sidebar links */
@@ -33,6 +38,7 @@ body{
   color: #9DA5B4;
   display: block;
 }
+
 
 /* Style links on mouse-over */
 .sidebar a:hover {

@@ -15,27 +15,26 @@ function openFolder(evt, folderName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-// Close London
-document.getElementById("closeLondon").addEventListener("click", closeLondon);
-function closeLondon() {
-  var london = document.getElementById("London") ;
-  london.innerHTML = "";
-  london.style.backgroundColor = "#21252B";
+// Close Index Page
+document.getElementById("closeIndex").addEventListener("click", closeIndex);
+function closeIndex() {
+  var index = document.getElementById("indexPage") ;
+  index.innerHTML = "";
+  index.style.backgroundColor = "#21252B";
 }
 
-// Close Paris
-document.getElementById("closeParis").addEventListener("click", closeParis);
-function closeParis() {
-  var paris = document.getElementById("Paris") ;
-  paris.innerHTML = "";
-  paris.style.backgroundColor = "#21252B";
-  paris.style.height = "100%";
+// Close Style Page
+document.getElementById("closeStyle").addEventListener("click", closeStyle);
+function closeStyle() {
+  var style = document.getElementById("stylePage") ;
+  style.innerHTML = "";
+  style.style.backgroundColor = "#21252B";
 }
 
-// Close Tokyo
-document.getElementById("closeTokyo").addEventListener("click", closeTokyo);
-function closeTokyo() {
-  var tokyo = document.getElementById("Tokyo") ;
-  tokyo.innerHTML = "";
-  tokyo.style.backgroundColor = "#21252B";
+// Close Script Page
+document.getElementById("closeScript").addEventListener("click", closeScript);
+function closeScript() {
+  var script = document.getElementById("scriptPage") ;
+  script.innerHTML = "";
+  script.style.backgroundColor = "#21252B";
 }

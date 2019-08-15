@@ -16,23 +16,24 @@
 
     <!-- The sidebar -->
     <div class="sidebar">
-      <div class="sidebar-title">/home</div>
-      <ul id="folders">
+      <div id="sidebar-title"><a href="index.html">/home</a></div>
+      <ul id="tree">
         <li><a href="#contact" class="caret"><i class="fas fa-folder"></i> /projects</a>
           <ul class="nested">
-            <li><a href="#"><i class="far fa-file-alt"></i> Fusion</li></a>
-            <li><a href="#"><i class="far fa-file-alt"></i> Tetris</li></a>
-            <li><a href="#"><i class="far fa-file-alt"></i> Cantine</li></a>
-            <li><a href="#"><i class="far fa-file-alt"></i> Foodies</li></a>
-            <li><a href="#"><i class="far fa-file-alt"></i> Réalisateur</li></a>
+            <li><a href="#"><i class="far fa-file-alt" style="margin-left: -1em;"></i> Fusion</li></a>
+            <li><a href="#"><i class="far fa-file-alt" style="margin-left: -1em;"></i> Tetris</li></a>
+            <li><a href="#"><i class="far fa-file-alt" style="margin-left: -1em;"></i> Cantine</li></a>
+            <li><a href="#"><i class="far fa-file-alt" style="margin-left: -1em;"></i> Foodies</li></a>
+            <li><a href="#"><i class="far fa-file-alt" style="margin-left: -1em;"></i> Réalisateur</li></a>
           </ul>
         </li>
         <li><a href="#contact" class="caret"><i class="fas fa-folder"></i> /articles</a>
           <ul class="nested">
-            <li><a href="#"><i class="fab fa-html5"></i> HTML</li></a>
-            <li><a href="#"><i class="fab fa-css3-alt"></i> CSS</li></a>
-            <li><a href="#"><i class="fab fa-js"></i></i> JS</li></a>
-            <li><a href="#"><i class="fab fa-php"></i> PHP/MySQL</li></a>
+            <li><a href="#"><i class="fab fa-html5" style="margin-left: -1em;"></i> HTML</li></a>
+            <li><a href="#"><i class="fab fa-css3-alt" style="margin-left: -1em;"></i> CSS</li></a>
+            <li><a href="#"><i class="fab fa-js" style="margin-left: -1em;"></i></i> JS</li></a>
+            <li><a href="#"><i class="fab fa-php" style="margin-left: -1.3em;"></i> PHP/MySQL</li></a>
+            <li><a href="#"><i class="fab fa-git-alt" style="margin-left: -1em;"></i> Git</li></a>
           </ul>
         </li>
         <li><a href="#"><i class="far fa-images"></i> /gallery</a></li>
@@ -44,33 +45,33 @@
     <!-- Tabs -->
     <div class="tab">
 
-      <button class="tablinks" onclick="openFolder(event, 'London');" id="defaultOpen">London
-        <span id="closeLondon" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      <button class="tablinks" onclick="openFolder(event, 'indexPage');" id="defaultOpen">index.html
+        <span id="closeIndex" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
       </button>
 
-      <button class="tablinks" onclick="openFolder(event, 'Paris');">Paris
-        <span id="closeParis" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      <button class="tablinks" onclick="openFolder(event, 'stylePage');">style.css
+        <span id="closeStyle" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
       </button>
 
-      <button class="tablinks" onclick="openFolder(event, 'Tokyo');">Tokyo
-        <span id="closeTokyo" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
+      <button class="tablinks" onclick="openFolder(event, 'scriptPage');">script.js
+        <span id="closeScript" onclick="this.parentElement.style.display='none';" class="topright">&times</span>
       </button>
 
       <button class="border-bottom"></button>
 
     </div>
 
-    <div id="London" class="tabcontent">
+    <div id="indexPage" class="tabcontent">
       <h3>London</h3>
       <p>London is the capital city of England.</p>
     </div>
 
-    <div id="Paris" class="tabcontent">
+    <div id="stylePage" class="tabcontent">
       <h3>Paris</h3>
       <p>Paris is the capital of France.</p>
     </div>
 
-    <div id="Tokyo" class="tabcontent">
+    <div id="scriptPage" class="tabcontent">
       <h3>Tokyo</h3>
       <p>Tokyo is the capital of Japan.</p>
     </div>
